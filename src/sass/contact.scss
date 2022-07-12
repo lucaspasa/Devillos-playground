@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3vw;
+    max-width: 110vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: clamp(1rem, 1rem + 1vw, 2rem);
+}
+
+.sub-title {
+    margin-top: 2vw;
+    font-size: clamp(15px, 15px + 3vw, 55px);
+		flex-grow: 2;
+		letter-spacing: 3px;
+		overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 3vw 0;
+    max-width: 90vw;
+    min-width: 70vw;
+    padding-bottom: 2vw;
+    border-bottom: 2px solid black;
+}
+
+section a:visited {
+	text-decoration: none;
+	color: rgb(160, 20, 20);
+}
+
+section a:link {
+	text-decoration: none;
+	color: rgb(160, 20, 20);
+}

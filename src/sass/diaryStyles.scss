@@ -1,0 +1,122 @@
+@font-face {
+	font-family: "Lemon-Milk";
+	src: url("../assets/fonts/LemonMilkRegular-X3XE2.otf");
+	font-style: normal;
+	font-weight: 100;
+	}
+
+
+.container-grid{
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 12.5% 10% 10% 10% 17.5% 10% 10% 10% 10%;
+    row-gap: 20px;
+    column-gap: 0;
+    grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 20px;
+}
+
+#title {
+    margin: 0;
+    margin-top: 1vw;
+    font-weight: bold;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 5px solid black;
+    justify-content: space-between;
+    font-family: Lemon-Milk;
+}
+
+article{
+    
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     grid-column-start: 4;
+     grid-column-end: 7;
+    grid-row: auto;
+    padding: 15px;
+    border-radius: 2%;
+}
+
+h4{
+    font-family: Lemon-Milk;
+}
+
+.comment {
+    background-color: rgb(250, 237, 218);
+    margin: 50px 40px 50px 0px;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.1);
+    padding: 5%;
+    max-height: 40vw;
+}
+
+#feb-2 {
+    grid-row: 2;
+}
+
+#arrow{
+    width: 90%;
+    height: 3vw;
+}
+
+.line{  /* comment arrow*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    
+}
+
+article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 700px) {
+    #title {
+        grid-column-start: 1;
+        grid-column-end: 10;
+    }
+
+    .container-grid{
+        grid-template-columns: 12.5% 10% 10% 10% 17.5% 10% 10% 10% 10% 0%;
+    }
+
+    article{
+     background-color: whitesmoke;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     grid-column-start: 1;
+     grid-column-end: 6;
+     grid-row: auto;
+     padding: 15px;
+     border-radius: 2%;
+    }
+
+    .line{   /* comment arrow*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row: 2;
+        grid-column-start: 6;
+        grid-column-end: 7;
+        
+    }
+
+    .comment {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        
+    }
+  }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <title>Personal Playground tm</title>
+    </head>
+
+
+    <body>
+	
+	<header id="header">
+		<img src="Devillo.png" id="logo" alt="Devillo Logo" width="100" height="100">
+	  <h1 class="title">Welcome To Hell</h1>
+		<div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+				<div class="dropdown-content">
+					<a href="godsdiary.html">God's Diary</a>
+					<a href="videosofmonkeys.html">Videos of MF Monkeys</a>
+					<a href="contact.html">Contact Lucifer</a>
+				</div>
+		</div>
+	</header> 
+        <nav>
+            <ul>
+                <li><a href="godsdiary.html">God's Diary</a></li>
+                <li><a href="videosofmonkeys.html">Videos of MF Monkeys</a></li>
+                <li><a href="contact.html">Contact Lucifer</a></li>
+            </ul>
+        </nav>
+
+        <article>hello there, by now you are probably wondering how I got here, well to tell you the truth...</article>
+		
+		<div id="circle">hello</div>
+    </body>
+</html>

@@ -17,7 +17,7 @@ body{
     }
 
 main{
-	min-height: 85vh;
+	min-height: 90vh;
 }
 
 #index-main{
@@ -99,7 +99,7 @@ h1, h2{
 }
 
 .title{
-		font-size: clamp(15px, 15px + 3vw, 50px);
+		font-size: clamp(20px, 20px + 3vw, 50px);
 		padding: 0px 0px 0px 0px;
 		margin: 0px 25px 0px 0px;
 		flex-grow: 2;
@@ -148,7 +148,7 @@ h1, h2{
 	flex-grow: 0;
 	justify-content: center;
 	min-width: 100px;
-
+	// font-size: 1.5em;
 }
 
 
@@ -209,7 +209,7 @@ h1, h2{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	max-width: 80vw;
+	max-width: 1200px;
 	min-height: 15vw;
 	padding: 2vw;
 	background-color: rgba(255, 235, 205, 0.884);
@@ -263,3 +263,36 @@ h2 {
 	pointer-events: none;
 }
 
+@media only screen and (max-width: 1000px) {
+	body{
+		min-height: 100vh;
+	}
+	header{
+		min-height: 10em;
+	}
+	footer{
+		font-size: 2em;
+	}
+	#landing-card{
+		// border: aqua 2px dotted;
+		margin-bottom: 0;
+	}
+	.head-title{
+		font-size: 4em;
+	}
+	.dropdown-container{
+		height: 6em;
+		// border: aqua 2px solid;
+		.dropdown{
+			width: 100%;
+			height: 6em;
+			font-size: 1.5em;
+			.dropdown-content{
+				margin-top: 2.1em;
+			}
+			.dropbtn{
+				z-index: 6;
+			}
+		}
+	}
+}
